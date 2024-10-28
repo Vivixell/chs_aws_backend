@@ -54,6 +54,6 @@
   app.use(NotFound);  
   app.use(errorHandler);
 
-  app.listen(4000, () => {
-    console.log("server is listening on port 4000");
+  app.listen(process.env.PORT, () => {
+    console.log( `server is listening on port ${process.env.PORT}`);
   });
